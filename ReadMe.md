@@ -226,7 +226,8 @@ Once the login and Power BI object has been selected the user can press the Embe
     });
 
     embed.off("saved");
-    embed.on("saved", function (event) {
+
+embed.on("saved", function (event) {
         window.external.LogToBrowserHost(event.detail);
         if (event.detail.saveAs) {
             window.external.LogToBrowserHost('In order to interact with the new report, create a new token and load the new report');
@@ -268,6 +269,10 @@ Once the login and Power BI object has been selected the user can press the Embe
 
 ## Wrap Up
 I hope you find this sample and overview useful.  I suspect the case of embedding Power BI in WPF Applications will not be the standard use case but if you need to do it you should have the pieces to get it running.
+
+## Sample Source
+The source for the sample application can be located at
+[PowerBIEmbedded-Native-WPFBrowser](https://github.com/rreilly70/PowerBIEmbedded-Native-WPFBrowser)
 
 ## Acknowledgements
 * [Noseratio](https://stackoverflow.com/users/1768303/noseratio) - For code samples on setting browser control features in the Registry.  Not needed if using the Meta Tag http-equiv="X-UA-Compatible" but kept the code in as you might find other browser control features you would like to set from the application and this code make it easy.

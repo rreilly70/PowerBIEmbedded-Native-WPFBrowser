@@ -63,7 +63,7 @@ At application startup there are some object that need to be initialized beyond 
 ### Authentication and Power BI Object Loading
 The first step in using the application is getting the user authenticated.  Upon clicking the Authenticate button the user will be presented with a external pop-up window that allows the user to select existing accounts to login to Azure AD or use a new one.  This is functionality built into the Azure ADAL library.  
 
-![Alt Text](./images/login.png)
+![Alt Text](./images/Login.png)
 
 This dialog authenticates the user to the Azure AD Tenenat associated with users and their O365\Power BI Tenant.  The following code kicks this process off with the result of the successful authentication being captured.
 

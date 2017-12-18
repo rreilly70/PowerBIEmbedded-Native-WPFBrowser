@@ -94,7 +94,7 @@ Once the login and Power BI object has been selected the user can press the Embe
 
 1.  The WPF web Browser Control is provided a ObjectForScripting.  This is a class that provides a mechanism by which communication between the Javscript in the Web Browser Control can communicate with the containing WPF application host.  The object assigned in this case is
 
-```cs
+L``cs
         [ComVisible(true)]
         public class AddJavascriptObjects
         {
@@ -126,7 +126,7 @@ Once the login and Power BI object has been selected the user can press the Embe
     * Due to some limitation on the WPF browser Control it was neccessary for the Browser Control to call back into the WPF host to let the Host know that the HTML and JavaScript is loaded and ready.  The built-in event for the Web Browser Control fires after the files have been loaded but not processed\rendered into the DOM.
 * LogToBrowserHost()
     * This method allows the JavaScript in the Web Browser Control to pump Power BI events back out to the WPF host so they can be displayed for logging
-    ![Alt Text](images/logging.png)
+    ![Alt Text](images/Logging.png)
 
 2. The Web Browser Control is then passed the URI to the locally provided HTML file that bootstraps the browser so that Power BI Objects cn be rendered.  The ReportLoader.html is a very stripped down HTML File that pulls in the the required Javascript and provides a DIV container to render the Power BI Object into.
     * **Key Points:** Due to issue with pulling in local content into the web browser there are some things to be aware of:

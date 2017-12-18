@@ -94,7 +94,7 @@ Once the login and Power BI object has been selected the user can press the Embe
 
 1.  The WPF web Browser Control is provided a ObjectForScripting.  This is a class that provides a mechanism by which communication between the Javscript in the Web Browser Control can communicate with the containing WPF application host.  The object assigned in this case is
 
-L``cs
+```cs
         [ComVisible(true)]
         public class AddJavascriptObjects
         {
